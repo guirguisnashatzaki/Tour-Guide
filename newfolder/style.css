@@ -1,0 +1,9 @@
+p{
+    color: red;
+}
+
+p::before{
+    content: 'FFF';
+    font-size: 25;
+    color: blue;
+}

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?fsmily=Cookie');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+     min-height: 100%;
+}
+
+
+
+body {
+    background-color: #151719;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation:bgfade 2s;
+    
+}
+
+@keyframes bgfade
+{
+  0%  {opacity:0;}
+  100% {opacity:1;}
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Cookie";
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+    opacity: 1;
+    color: white;
+    animation: infinite;
+}
+
+.video-container {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+button{
+    background-color: rgb(113, 88, 52);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+}
+
+
+/* Responsive columns */
+@media screen and (max-width: 100px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        }
+    }
+
+
+    .column {
+        float: left;
+        width: 100%;
+        padding: 0 10px;
+    }
+        
+        .row {
+            margin: 0 -5px;
+            width: 100%;
+        }
+        
+    h4{
+        color: white;
+    }
+
+    .topnav {
+        background-color: rgb(184, 158, 75);
+        overflow: hidden;
+        opacity: 80%;
+        position: absolute;
+        top: 20px;
+        left: 170px;
+    }
+
+
+    #imgPharoh {
+        border-radius: 100%;
+        width: 100px;
+        float: left;
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        }
+        
+    .niceLinks {
+        text-decoration: none;
+        color: white;
+        
+    }
+
+    .tinyPicture {
+        height: 80px;
+        border-radius: 10px;
+    }
+
+
+    .card {
+        color: white;
+        border: transparent;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-top: 10px;
+        font-family: "Trebuchet MS", sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        transition: all 0.2s ease-out;
+    }
+        
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        padding: 10px;
+    }
+
+
+    button:hover{
+        background-color: #151719;
+        color: white;
+    }
+
+    button:active{
+        background-color: rgb(113, 88, 52);
+        color: white;
+    }
+
+    .niceLinks:hover {
+        color: PapayaWhip;
+    }
+    a{
+        color: white;
+    }
+
+    .card:hover {
+        background-color: rgb(184, 158, 75);
+        color: black;
+        border-color: #000000;
+        transform: translateY(-0.2px);
+    }
+
+    #imgPharoh:hover {
+        animation-name: rollOver;
+        animation-duration: 0.8s;
+        animation-iteration-count: 2;
+    }
+    .icon{
+        float: left;
+    }
+        
+    @keyframes rollOver { /* creating an animation that fires on hover */
+        
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+    }
+
+
+    .topnav:hover{
+        animation-name: fadee;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+        
+        
+    @keyframes fadee {
+        0% {
+                transform: scale(1);
+        }
+        100% {
+                transform: scale(0.5);
+        }
+    }
